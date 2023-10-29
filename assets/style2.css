@@ -1,6 +1,7 @@
 :root {
     --azure: #f0ffff;
     --black: #090808;
+    --black2:rgb(17, 15, 15)8;
     --red: #ff0022;
     --rust: #f4b860;
 
@@ -54,7 +55,7 @@ footer {
     width: 100%;
     font-size: 16px;
     color: white;
-    /* border-top: #a80000 2px solid; */
+    border-top: var(--rust) 20px solid;
 }
 
 footer h2{
@@ -99,8 +100,8 @@ footer h2{
     height: 100vh;
 }
 .info {
-    border-top: 2px solid var(--red);
-    /* border-bottom: 2px solid var(--red); */
+    border-top: 2px dotted var(--red);
+    border-bottom: 2px dotted var(--red);
 }
 
 .info h2 {
@@ -113,8 +114,8 @@ footer h2{
 }
 
 .music {
-    background-color: var(--azure);
-    color: var(--black);
+    background-color: var(--black2);
+    color: var(--azure);
     font-size: 0.875rem;
 }
 
@@ -129,7 +130,8 @@ footer h2{
 .playlist {
     background-color: var(--azure);
     padding: 20px 20px;
-    box-shadow: 0 4px 4px 0 var(--rust);
+    color: #090808;
+    /* box-shadow: 0 4px 4px 0 var(--rust); */
     transition: 0.3s;
     border-radius: 5px; 
     display: flex;
